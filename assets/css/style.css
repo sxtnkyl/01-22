@@ -1,113 +1,93 @@
-/* Universal Selector */
 * {
-  margin:0;
-  padding:0;  
+  /* good practice to put on all elements */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* global font size */
+  font-size: 12px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-/* Element Selectors */
 body {
-  position: relative;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-size: 20px;
-  background-color: #FDF8F5;
-  color: #4F4846;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+nav {
+  height: 100%;
+}
+
+ul,
+li,
+a {
+  height: 100%;
+  display: inline;
+  font-size: 2rem;
 }
 
 h1,
 h2 {
-  margin: 20px;
-}
-
-main {
-  padding: 60px 0;
-}
-
-li {
-  display: inline;
-  padding: 20px;
-  text-decoration: none;
+  font-size: 2rem;
+  margin: 2rem;
 }
 
 a {
   text-decoration: none;
-  color: #FDF8F5;
+  color: white;
 }
 
 header,
 footer {
-  height: 60px;
+  height: 10vh;
   width: 100%;
-  line-height: 60px;
-  background-color: #266150;
+  line-height: 20px;
+  background-color: green;
 }
 
 header {
   position: fixed;
-  border-bottom: 10px solid #DDAF94;
+  top: 0;
 }
 
 footer {
   position: absolute;
-  margin-top: 0;
+  padding-top: 20px;
   bottom: 0;
-  border-bottom: 10px solid #4F4846;
-  color: #FDF8F5;    
-}
-
-figure {
-  margin-bottom: 40px;
+  color: white;
 }
 
 img {
   display: block;
-  margin: 20px auto;
-}
-
-section {
-  margin-bottom: 0;
-  padding: 20px 10px 40px 10px;
-  border-top: 3px solid #DDAF94;
-  background-color:  #E8CEBF;
+  margin: auto;
 }
 
 form {
-  /* Center the form on the page */
+  /* quick center */
   margin: 0 auto;
-  width: 500px;
+  width: 50vw;
   padding: 10px;
-  border: 5px solid #DDAF94;
-  border-radius: 20px;
+  border: 5px solid black;
 }
 
-label {
-  display: inline-block;
+label,
+input {
+  margin: 10px auto;
+  display: block;
   width: 100px;
 }
-  
-input, 
-textarea {
-  box-sizing: border-box;
-  width: 300px;
-  border: 1px solid #4F4846;
-}
 
-textarea {
-  vertical-align: top;
-  height: 60px;
-}
-  
 button {
   height: 40px;
   width: 120px;
-  background-color: #4F4846;
-  color: #FDF8F5;
+  background-color: #4f4846;
+  color: white;
 }
- 
-/* Class Selectors */
-.text-center {
+
+.textCenter {
   text-align: center;
 }
 
-.text-right {
+.alignTextRight {
   text-align: right;
 }
